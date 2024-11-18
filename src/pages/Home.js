@@ -7,7 +7,7 @@ import data from '../data.json'
 
 function Home() {
   const navigate = useNavigate()
-  const cart = useSelector((state) => state.cart)
+  const {cart} = useSelector(state => state.cart)
 
   const getTotalQuantity = () => {
     let total = 0
